@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import axios from 'axios';
 
@@ -46,8 +46,8 @@ class BooksList extends React.Component {
                         placeholder="Search for a book"
                         onChange={this.handleChange}
                     />
-                    <button type="submit">
-                        <i className="fa fa-search">Search</i>
+                    <button className="btn btn-secondary"type="submit">
+                        <i>Search</i>
                     </button>
                 </form>
                 {booksList.length > 0 ? (
@@ -93,11 +93,12 @@ class BookCard extends React.Component {
         if (!imageLinks || imageLinks === 'N/A') { return null; }
 
         return (
-            <div className="book-card-container">
+            <div className="book-card-container border-primary mb-3">
 
                 <div className="image-container">
                     <div
-                        className="bg-image" style={{ backgroundImage: `url(${imageLinks.medium})` }}
+                        className="bg-image" style={imageLinks.large ? { backgroundImage: `url(${imageLinks.large})` } :
+                      {backgroundImage: `url(https://www.nocowboys.co.nz/images/v3/no-image-available.png)`}}
                     />
                 </div>
                 <div className="book-info">
@@ -105,11 +106,11 @@ class BookCard extends React.Component {
                     <div>
 
                         <h1>{title}</h1>
-                        <h4></h4>
+
                         <small>Authors: {authors}</small>
                     </div>
                     <h4>Published by: {publisher}</h4>
-                    <a href={infoLink}>More info</a>
+                    <a href={infoLink} class="badge badge-pill badge-secondary">More info</a>
 
                 </div>
 

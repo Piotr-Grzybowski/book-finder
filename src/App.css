@@ -68,15 +68,15 @@ form button:active {
 }
 
 .image-container {
-    -webkit-clip-path: circle(90% at 30px 30px);
-    clip-path: circle(90% at 30px 30px);
+    /* -webkit-clip-path: circle(90% at 30px 30px);
+    clip-path: circle(90% at 30px 30px); */
     flex: 4;
 }
 
 .bg-image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
