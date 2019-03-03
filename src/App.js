@@ -97,7 +97,7 @@ class BookCard extends React.Component {
 
                 <div className="image-container">
                     <div
-                        className="bg-image" style={imageLinks.large ? { backgroundImage: `url(${imageLinks.large})` } :
+                        className="bg-image" style={imageLinks.medium ? { backgroundImage: `url(${imageLinks.medium})` } :
                       {backgroundImage: `url(https://www.nocowboys.co.nz/images/v3/no-image-available.png)`}}
                     />
                 </div>
