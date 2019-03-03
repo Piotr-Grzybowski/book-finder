@@ -1,10 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component} from 'react';
 import './App.css';
 import axios from 'axios';
 
 class BooksList extends React.Component {
     state = {
-        booksList: ['zyTCAlFPjgYC'],
+        booksList: ['EJF5DwAAQBAJ'],
         searchTerm: ''
     };
 
@@ -46,7 +47,7 @@ class BooksList extends React.Component {
                         onChange={this.handleChange}
                     />
                     <button type="submit">
-                        <i className="fa fa-search" />
+                        <i className="fa fa-search">Search</i>
                     </button>
                 </form>
                 {booksList.length > 0 ? (
@@ -83,31 +84,35 @@ class BookCard extends React.Component {
     render() {
         const {
             title,
+            infoLink,
             authors,
             publisher,
             imageLinks
         } = this.state.bookData;
 
+        if (!imageLinks || imageLinks === 'N/A') { return null; }
 
         return (
             <div className="book-card-container">
-              <h4>Początek</h4>
+
                 <div className="image-container">
                     <div
-                        className="bg-image"
+                        className="bg-image" style={{ backgroundImage: `url(${imageLinks.medium})` }}
                     />
                 </div>
                 <div className="book-info">
                     <h2>Book Details</h2>
                     <div>
+
                         <h1>{title}</h1>
-                        {console.log(this.state.bookData)}
+                        <h4></h4>
                         <small>Authors: {authors}</small>
                     </div>
                     <h4>Published by: {publisher}</h4>
+                    <a href={infoLink}>More info</a>
 
                 </div>
-              <h4>koniec</h4>
+
             </div>
         )
     }

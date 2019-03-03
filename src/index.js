@@ -4,7 +4,7 @@ import './index.css';
 import BooksList from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<BooksList />, document.getElementById('root'));
+ReactDOM.render(<BooksList />, document.getElementById('app'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
