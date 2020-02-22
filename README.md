@@ -1,7 +1,7 @@
 # Book finder
 
 ## Overview
-> Simple app for searching books. It pulls data from [Google Books Api](https://developers.google.com/books) based on search phrase typed into input.
+> Simple app for searching books. It pulls data from [Google Books Api](https://developers.google.com/books) based on search phrase typed into input. Build in React with axios.
 
 <img src="https://i.postimg.cc/sxmRgZzc/Zrzut-ekranu-z-2020-02-22-18-05-21.png">
 
