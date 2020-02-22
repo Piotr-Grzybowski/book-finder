@@ -1,11 +1,11 @@
-#Book finder
+# Book finder
 
-##Overview
+## Overview
 > Simple app for searching books. It pulls data from [Google Books Api](https://developers.google.com/books) based on search phrase typed into input.
 
 **[LIVE LINK][(https://book-looker.netlify.com/)]**
 
-##Features
+## Features
 - input and search button
 - single results are on single cards
 - when nothing typed in or couldn't find a title, blank cards will show up with a message
@@ -13,7 +13,7 @@
 - when there is no author or publisher we will see "no information"
 - app display maximum up to 10 results of search
 
-##Tech used / Dependencies
+## Tech used / Dependencies
 > This is React App bootstrapped wit CRA
 > Dependencies:
 - react
