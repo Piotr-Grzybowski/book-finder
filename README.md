@@ -17,7 +17,7 @@
 
 ## Tech used / Dependencies
 > This is React App bootstrapped wit CRA
-> Dependencies:
+**Dependencies**:
 - react
 - axios
 - bootstrap
