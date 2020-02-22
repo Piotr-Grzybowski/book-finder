@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Book finder
 
-## Available Scripts
+##Overview
+> Simple app for searching books. It pulls data from [Google Books Api](https://developers.google.com/books) based on search phrase typed into input.
 
-In the project directory, you can run:
+**[LIVE LINK][(https://book-looker.netlify.com/)]**
 
-### `npm start`
+##Features
+- input and search button
+- single results are on single cards
+- when nothing typed in or couldn't find a title, blank cards will show up with a message
+- when there is no image than standard image will show up
+- when there is no author or publisher we will see "no information"
+- app display maximum up to 10 results of search
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Tech used / Dependencies
+> This is React App bootstrapped wit CRA
+> Dependencies:
+- react
+- axios
+- bootstrap
+- font awesome
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Setup the project
+### From the repo locally:
+- first clone this repository
+```shell
+git clone https://github.com/JohnGIDoe/book-finder/
+```
+- install all dependencies npm install
+``` shell 
+npm install
+```
+- run project with npm start
+```shell
+npm start
+```
+### Live version:
+<a href="https://book-looker.netlify.com//">Here</a>
 
-### `npm test`
+## Support
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Reach out to me at one of the following places!
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Twitter at <a href="https://twitter.com/grzybek6" target="_blank">`Piotr Grzybowski`</a>
