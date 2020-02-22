@@ -12,10 +12,13 @@ class BooksList extends React.Component {
 
     search = event => {
         event.preventDefault();
-        this.setState({
-          booksList: [],
-        });
-        if (!this.state.searchTerm) return;
+        if (!this.state.searchTerm) {
+          this.setState({
+            booksList: [],
+          });
+          return;
+        }
+        
         axios
             .get(
                 `https://www.googleapis.com/books/v1/volumes?q=${this.state.searchTerm}&key=AIzaSyAmt5YReWJ39vXhNVGufgGKxkVfxHg0Z_A`
