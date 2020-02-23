@@ -25,7 +25,7 @@ class BooksList extends React.Component {
             )
             .then(res => res.data)
             .then(res => {
-                console.log(res.items);
+                // console.log(res.items);
                 if (!res.items) {
                 this.setState({ booksList: [] });
                 return;
